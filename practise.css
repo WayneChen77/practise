@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#practise1 {
+  width: 100%;
+  height: 30vh;
+  background-color: #ccc;
+  background: linear-gradient(130deg, rgb(121, 121, 220) 40%, transparent 50%) center center/100% 100%, url("https://picsum.photos/500/300") right center/cover;
+}
+#practise1 .container {
+  height: 100%;
+}
+#practise1 .container .left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-20%);
+}
+#practise1 .container .left h1 {
+  border-bottom: 1px solid rgb(213, 58, 58);
+}
+
+#practise2 {
+  width: 100%;
+  height: 70vh;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+}
+#practise2 .container {
+  width: 25%;
+  height: 50%;
+  background-color: black;
+  background: url("https://picsum.photos/400/300");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#practise2 .container .texthover {
+  opacity: 0;
+}
+#practise2 .container:hover .texthover {
+  display: flex;
+  flex-wrap: wrap;
+  color: aliceblue;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s;
+}
+#practise2 .container:hover .texthover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: aquamarine;
+}
+#practise2 .container:hover .text {
+  display: none;
+}/*# sourceMappingURL=practise.css.map */
