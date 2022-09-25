@@ -27,14 +27,14 @@
 
 #practise2 {
   width: 100%;
-  height: 70vh;
+  height: 30vh;
   background-color: gray;
   display: flex;
   flex-direction: row;
 }
 #practise2 .container {
   width: 25%;
-  height: 50%;
+  height: 30vh;
   background-color: black;
   background: url("https://picsum.photos/400/300");
   display: flex;
@@ -65,4 +65,60 @@
 }
 #practise2 .container:hover .text {
   display: none;
+}
+
+#practise3 .container {
+  display: flex;
+  margin: auto;
+  width: 1200px;
+}
+#practise3 .container .wrap {
+  width: 33%;
+  margin: 15px;
+  text-align: center;
+  border: 1px gray solid;
+  position: relative;
+  transform: translateY(0);
+  transition: all 0.5s;
+}
+#practise3 .container .wrap img {
+  width: 100%;
+  height: 300px;
+  vertical-align: middle;
+}
+#practise3 .container .wrap:hover {
+  transform: translateY(-30%);
+}
+#practise3 .container .wrap:hover .text {
+  color: blue;
+  background-color: rgb(89, 184, 227);
+}
+#practise3 .container .wrap:hover .text::before {
+  border-left: 184px solid rgb(89, 184, 227);
+  border-right: 184px solid rgb(89, 184, 227);
+}
+#practise3 .container .wrap .text {
+  transition: all 0.5s;
+}
+#practise3 .container .wrap .text::before {
+  transition: all 0.5s;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  border-top: 65px solid transparent;
+  border-left: 184px solid white;
+  border-right: 185px solid white;
+  transform: translateY(-100%);
+}
+#practise3 .container .wrap .text h2 {
+  border-bottom: 1px solid gray;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+#practise3 .container .wrap .text p {
+  padding: 16px;
+  line-height: 1.5rem;
 }/*# sourceMappingURL=practise.css.map */

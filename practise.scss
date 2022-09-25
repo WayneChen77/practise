@@ -30,14 +30,14 @@
 
 #practise2 {
   width: 100%;
-  height: 70vh;
+  height: 30vh;
   background-color: gray;
   display: flex;
   flex-direction: row;
 
   .container {
     width: 25%;
-    height: 50%;
+    height: 30vh;
     background-color: black;
     background: url("https://picsum.photos/400/300");
     display: flex;
@@ -68,6 +68,66 @@
       }
       .text {
         display: none;
+      }
+    }
+  }
+}
+
+#practise3 {
+  .container {
+    display: flex;
+    margin: auto;
+    width: 1200px;
+
+    .wrap {
+      width: 33%;
+      margin: 15px;
+      text-align: center;
+      border: 1px gray solid;
+      position: relative;
+      transform: translateY(0);
+      transition: all 0.5s;
+      img {
+        width: 100%;
+        height: 300px;
+        vertical-align: middle;
+      }
+      &:hover {
+        transform: translateY(-30%);
+        .text {
+          color: blue;
+          background-color: rgb(89, 184, 227);
+          &::before {
+            border-left: 184px solid rgb(89, 184, 227);
+            border-right: 184px solid rgb(89, 184, 227);
+          }
+        }
+      }
+      .text {
+        transition: all 0.5s;
+        &::before {
+          transition: all 0.5s;
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 0;
+          left: 0;
+          // top: 0;
+          border-top: 65px solid transparent;
+          border-left: 184px solid white;
+          border-right: 185px solid white;
+          transform: translateY(-100%);
+        }
+        h2 {
+          border-bottom: 1px solid gray;
+          margin-bottom: 0.5rem;
+          padding-bottom: 00.5rem;
+          font-weight: 600;
+        }
+        p {
+          padding: 16px;
+          line-height: 1.5rem;
+        }
       }
     }
   }
