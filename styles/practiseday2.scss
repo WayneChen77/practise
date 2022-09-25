@@ -1,0 +1,46 @@
+#practiseday2 {
+  padding: 100px;
+  margin: auto;
+  background: linear-gradient(35deg, rgb(34, 142, 209), rgb(239, 236, 233))
+    fixed center center/100% 100%;
+
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    & > :first-child {
+      margin-right: -10%;
+    }
+    &:nth-child(1) .text {
+      background-color: rgba($color: red, $alpha: 0.3);
+    }
+    &:nth-child(2) .text {
+      background-color: rgba($color: blue, $alpha: 0.3);
+    }
+    &:nth-child(3) .text {
+      background-color: rgba($color: yellow, $alpha: 0.3);
+    }
+    &:nth-child(4) .text {
+      background-color: rgba($color: green, $alpha: 0.3);
+    }
+    .pic {
+      width: 55%;
+      img {
+        width: 100%;
+        vertical-align: middle;
+      }
+    }
+    .text {
+      width: 55%;
+      z-index: 1;
+      padding: 50px 30px;
+      h2 {
+        font-weight: 600;
+        font-size: 2rem;
+      }
+      p {
+        font-weight: 300;
+      }
+    }
+  }
+}

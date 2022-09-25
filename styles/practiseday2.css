@@ -1,0 +1,44 @@
+#practiseday2 {
+  padding: 100px;
+  margin: auto;
+  background: linear-gradient(35deg, rgb(34, 142, 209), rgb(239, 236, 233)) fixed center center/100% 100%;
+}
+#practiseday2 .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+#practiseday2 .item > :first-child {
+  margin-right: -10%;
+}
+#practiseday2 .item:nth-child(1) .text {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+#practiseday2 .item:nth-child(2) .text {
+  background-color: rgba(0, 0, 255, 0.3);
+}
+#practiseday2 .item:nth-child(3) .text {
+  background-color: rgba(255, 255, 0, 0.3);
+}
+#practiseday2 .item:nth-child(4) .text {
+  background-color: rgba(0, 128, 0, 0.3);
+}
+#practiseday2 .item .pic {
+  width: 55%;
+}
+#practiseday2 .item .pic img {
+  width: 100%;
+  vertical-align: middle;
+}
+#practiseday2 .item .text {
+  width: 55%;
+  z-index: 1;
+  padding: 50px 30px;
+}
+#practiseday2 .item .text h2 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+#practiseday2 .item .text p {
+  font-weight: 300;
+}/*# sourceMappingURL=practiseday2.css.map */

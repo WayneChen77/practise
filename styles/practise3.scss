@@ -1,0 +1,54 @@
+#practise3 {
+  height: 100vh;
+
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, rgb(99, 99, 204), white);
+}
+.item {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  margin: 2rem;
+  box-shadow: 0 10px 30px rgba($color: #1641a5, $alpha: 0.5);
+  .pic {
+    width: 50%;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .text {
+    width: 50%;
+
+    height: 100%;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    line-height: 1.5rem;
+    background-color: white;
+    h2 {
+      align-self: center;
+      padding: 0.5rem;
+    }
+    button {
+      margin: 1rem 0;
+      align-self: flex-end;
+      margin-right: 1rem;
+      border: 1px solid blue;
+      border-radius: 20%;
+      width: 3rem;
+      text-decoration: none;
+      background-color: transparent;
+      &:hover {
+        background-color: beige;
+        color: gray;
+      }
+    }
+  }
+}
