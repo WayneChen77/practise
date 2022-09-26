@@ -177,24 +177,23 @@
   justify-content: center;
   background: linear-gradient(120deg, rgb(99, 99, 204), white);
 }
-
-.item {
+#practise3 .item {
   width: 400px;
   height: 250px;
   display: flex;
   margin: 2rem;
   box-shadow: 0 10px 30px rgba(22, 65, 165, 0.5);
 }
-.item .pic {
+#practise3 .item .pic {
   width: 50%;
 }
-.item .pic img {
+#practise3 .item .pic img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.item .text {
+#practise3 .item .text {
   width: 50%;
   height: 100%;
   padding: 0 16px;
@@ -204,11 +203,11 @@
   line-height: 1.5rem;
   background-color: white;
 }
-.item .text h2 {
+#practise3 .item .text h2 {
   align-self: center;
   padding: 0.5rem;
 }
-.item .text button {
+#practise3 .item .text button {
   margin: 1rem 0;
   align-self: flex-end;
   margin-right: 1rem;
@@ -218,7 +217,126 @@
   text-decoration: none;
   background-color: transparent;
 }
-.item .text button:hover {
+#practise3 .item .text button:hover {
   background-color: beige;
   color: gray;
+}
+
+.practise4 {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+.practise4 .footer {
+  color: white;
+  background-color: rgb(26, 128, 128);
+  margin: auto;
+}
+.practise4 .footer .container {
+  height: 30vh;
+  background-image: linear-gradient(120deg, rgb(78, 140, 189), rgb(51, 51, 170));
+  width: 100%;
+  padding-top: 3rem;
+  display: flex;
+  color: white;
+  margin: auto;
+}
+.practise4 .footer .container .item:last-child {
+  display: flex;
+  flex-direction: column;
+}
+.practise4 .footer .container .item:last-child form {
+  width: 100%;
+  margin: auto;
+}
+.practise4 .footer .container .item {
+  width: 0;
+  flex-grow: 1;
+  margin: 0 3rem;
+}
+.practise4 .footer .container .item h2 {
+  padding: 0.5rem;
+  border-bottom: 2px solid white;
+  margin-bottom: 0.5rem;
+}
+.practise4 .footer .container .item ul li {
+  padding: 0.3rem;
+}
+.practise4 .footer .container .item ul li:hover {
+  color: rgb(235, 138, 21);
+}
+.practise4 .footer .container .item input {
+  border: none;
+  padding: 0.3rem 0.5rem;
+  color: white;
+}
+.practise4 .footer .container .item input[type=button] {
+  background-color: aquamarine;
+}
+.practise4 .copyright {
+  text-align: center;
+  padding: 1rem;
+}
+
+.practise5 .nav {
+  padding: 1rem;
+  height: 10vh;
+  background-image: linear-gradient(90deg, rgb(87, 75, 75), gray);
+}
+.practise5 .nav .navbar ol {
+  margin: 0 2rem;
+  display: flex;
+}
+.practise5 .nav .navbar ol li {
+  position: relative;
+  margin: auto;
+  list-style: none;
+  border: none;
+}
+.practise5 .nav .navbar ol li img {
+  width: 15%;
+  height: 10vh;
+}
+.practise5 .nav .navbar ol li input {
+  padding: 0.3rem;
+  margin: 0.3rem;
+  border-radius: 30%;
+}
+.practise5 .nav .navbar ol li input:focus {
+  outline: none;
+}
+.practise5 .nav .navbar ol li button {
+  padding: 0.3rem;
+  background-color: white;
+  border-radius: 25%;
+}
+.practise5 .nav .navbar ol li a {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.practise5 .nav .navbar ol li {
+  transition: all 0.5s;
+  transform: translateY(0);
+}
+.practise5 .nav .navbar ol li:hover {
+  transform: translateY(-10px);
+}
+.practise5 .nav .navbar ol li a:after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -10px;
+  border-bottom: 1px solid white;
+  transition: all 0.5s;
+}
+.practise5 .nav .navbar ol li a:hover:after {
+  content: " ";
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  bottom: -10px;
+  border-bottom: 1px solid white;
 }/*# sourceMappingURL=practise.css.map */

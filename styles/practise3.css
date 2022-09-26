@@ -7,24 +7,23 @@
   justify-content: center;
   background: linear-gradient(120deg, rgb(99, 99, 204), white);
 }
-
-.item {
+#practise3 .item {
   width: 400px;
   height: 250px;
   display: flex;
   margin: 2rem;
   box-shadow: 0 10px 30px rgba(22, 65, 165, 0.5);
 }
-.item .pic {
+#practise3 .item .pic {
   width: 50%;
 }
-.item .pic img {
+#practise3 .item .pic img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.item .text {
+#practise3 .item .text {
   width: 50%;
   height: 100%;
   padding: 0 16px;
@@ -34,11 +33,11 @@
   line-height: 1.5rem;
   background-color: white;
 }
-.item .text h2 {
+#practise3 .item .text h2 {
   align-self: center;
   padding: 0.5rem;
 }
-.item .text button {
+#practise3 .item .text button {
   margin: 1rem 0;
   align-self: flex-end;
   margin-right: 1rem;
@@ -48,7 +47,7 @@
   text-decoration: none;
   background-color: transparent;
 }
-.item .text button:hover {
+#practise3 .item .text button:hover {
   background-color: beige;
   color: gray;
 }/*# sourceMappingURL=practise3.css.map */
